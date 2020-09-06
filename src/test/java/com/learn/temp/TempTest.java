@@ -16,4 +16,11 @@ public class TempTest {
     public void classTest () {
         System.out.println(double[][].class.getComponentType());
     }
+
+    @Test
+     public void className() {
+        String name = "binary-tree-level-order-traversal-ii";
+        name = name.replaceAll("-", "_");
+        System.out.println("_" + name);
+    }
 }

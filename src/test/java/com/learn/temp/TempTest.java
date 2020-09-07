@@ -20,6 +20,7 @@ public class TempTest {
     @Test
      public void className() {
         String name = "binary-tree-level-order-traversal-ii";
+        name = "top-k-frequent-elements";
         name = name.replaceAll("-", "_");
         System.out.println("_" + name);
     }

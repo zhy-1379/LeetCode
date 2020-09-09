@@ -65,7 +65,7 @@ public class Solution {
     }
 
 
-    // region
+    // region 回溯
 
     List<Integer> temp = new ArrayList<>();
     List<List<Integer>> ans = new ArrayList<>();
@@ -82,7 +82,7 @@ public class Solution {
         }
         // 记录合法的答案
         if (temp.size() == k) {
-            ans.add(new ArrayList<Integer>(temp));
+            ans.add(new ArrayList<>(temp));
             return;
         }
         // 考虑选择当前位置

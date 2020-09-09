@@ -18,7 +18,6 @@ public class Solution {
     private int[] nums;
 
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        List<Integer> combine = new ArrayList<>();
         nums = candidates;
         dfs(target, 0);
         return ans;
@@ -46,9 +45,9 @@ public class Solution {
             // 使用原引用，提高效率，递归调用前 加入列表，递归调用后，移除加入的一项，避免创建新的 List 浪费空间
             combine.add(nums[idx]);
             // 如果可以选择重复的数，idx 不变
-            // dfs(target - nums[idx], idx);
+            dfs(target - nums[idx], idx);
             // 如果不选择重复的数，idx 在此 +1
-            dfs(target - nums[idx], idx + 1);
+            // dfs(target - nums[idx], idx + 1);
             combine.remove(combine.size() - 1);
         }
     }

@@ -21,6 +21,7 @@ public class TempTest {
      public void className() {
         String name = "binary-tree-level-order-traversal-ii";
         name = "top-k-frequent-elements";
+        name = "average-of-levels-in-binary-tree";
         name = name.replaceAll("-", "_");
         System.out.println("_" + name);
     }

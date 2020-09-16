@@ -1,4 +1,4 @@
-package com.learn.leetcode._13_treasurehunt._226_invert_binary_tree;
+package com.learn.leetcode._226_invert_binary_tree;
 
 import java.util.Deque;
 import java.util.LinkedList;

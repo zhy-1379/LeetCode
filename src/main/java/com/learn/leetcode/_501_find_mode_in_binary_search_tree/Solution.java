@@ -1,10 +1,7 @@
 package com.learn.leetcode._501_find_mode_in_binary_search_tree;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 
 /**
  * ClassName: Solution
@@ -29,21 +26,27 @@ public class Solution {
     private TreeNode pre;
 
     public int[] findMode(TreeNode root) {
-        if (root == null)
+        if (root == null) {
             return new int[0];
+        }
+
         items = new ArrayList<>();
         // 这里设置为1是因为 在递归中 BST中最左边的结点被跳过了，作为初状态 该结点值出现一次，记录的出现最多次数一开始也为1
         maxCount = 1;
         curCount = 1;
         midTraversal(root);
         // 最右端结点的处理，从递归中看，最后一个结点与前一个结点相等只更新了curCount的值；不相等则只考虑到倒数第二个结点。
-        if(curCount > maxCount)
+        if (curCount > maxCount) {
             return new int[]{pre.val};
-        if(curCount == maxCount)
+        }
+
+        if (curCount == maxCount) {
             items.add(pre.val);
+        }
         int[] res = new int[items.size()];
-        for (int i = 0; i < res.length; i++)
+        for (int i = 0; i < res.length; i++) {
             res[i] = items.get(i);
+        }
         return res;
     }
 

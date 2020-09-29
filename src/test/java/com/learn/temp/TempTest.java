@@ -26,6 +26,7 @@ public class TempTest {
         name = "construct-binary-tree-from-inorder-and-postorder-traversal";
         name = "lowest-common-ancestor-of-a-binary-search-tree";
         name = "populating-next-right-pointers-in-each-node-ii";
+        name = "binary-tree-postorder-traversal";
 
         name = name.replaceAll("-", "_");
         System.out.println("_" + name);

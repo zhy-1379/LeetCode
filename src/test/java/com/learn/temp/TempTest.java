@@ -1,5 +1,6 @@
 package com.learn.temp;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 /**
@@ -13,22 +14,20 @@ import org.junit.Test;
 public class TempTest {
 
     @Test
-    public void classTest () {
-        System.out.println(double[][].class.getComponentType());
-    }
-
-    @Test
      public void className() {
-        String name = "binary-tree-level-order-traversal-ii";
-        name = "top-k-frequent-elements";
-        name = "average-of-levels-in-binary-tree";
-        name = "binary-tree-inorder-traversal";
-        name = "construct-binary-tree-from-inorder-and-postorder-traversal";
-        name = "lowest-common-ancestor-of-a-binary-search-tree";
-        name = "populating-next-right-pointers-in-each-node-ii";
-        name = "binary-tree-postorder-traversal";
+        String name;
+        // name = "binary-tree-level-order-traversal-ii";
+        // name = "top-k-frequent-elements";
+        // name = "average-of-levels-in-binary-tree";
+        // name = "binary-tree-inorder-traversal";
+        // name = "construct-binary-tree-from-inorder-and-postorder-traversal";
+        // name = "lowest-common-ancestor-of-a-binary-search-tree";
+        // name = "populating-next-right-pointers-in-each-node-ii";
+        // name = "binary-tree-postorder-traversal";
+        name = "insert-into-a-binary-search-tree";
 
         name = name.replaceAll("-", "_");
+        Assert.assertNotNull(name);
         System.out.println("_" + name);
     }
 }

@@ -3,7 +3,7 @@ package com.learn.leetcode._19_uibdoe;
 /**
  * ClassName: Solution
  * Description:
- * https://leetcode-cn.com/problems/UlBDOe/submissions/
+ * https://leetcode-cn.com/problems/UlBDOe/
  * date: 2020/10/1 20:51
  *
  * @author zhy

@@ -24,7 +24,8 @@ public class TempTest {
         // name = "lowest-common-ancestor-of-a-binary-search-tree";
         // name = "populating-next-right-pointers-in-each-node-ii";
         // name = "binary-tree-postorder-traversal";
-        name = "insert-into-a-binary-search-tree";
+        // name = "insert-into-a-binary-search-tree";
+        name = "sum-of-distances-in-tree";
 
         name = name.replaceAll("-", "_");
         Assert.assertNotNull(name);

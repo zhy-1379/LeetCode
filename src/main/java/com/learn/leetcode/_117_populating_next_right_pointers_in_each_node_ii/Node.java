@@ -3,7 +3,7 @@ package com.learn.leetcode._117_populating_next_right_pointers_in_each_node_ii;
 import java.util.ArrayList;
 import java.util.List;
 
-class Node {
+public class Node {
     public int val;
     public Node left;
     public Node right;

@@ -35,22 +35,23 @@ public class Solution {
                 return startIdx;
             }
 
-            gasHad = 0;
-            successful = true;
-            for (int i = 0; i < len; i++) {
-                // 加油
-                gasHad += gas[(startIdx - i + len) % len];
-                // 向后走,耗油
-                gasHad -= cost[(startIdx - i - 1 + len) % len];
-                // 油不够
-                if (gasHad < 0) {
-                    successful = false;
-                    break;
-                }
-            }
-            if (successful) {
-                return startIdx;
-            }
+            // 题解中不能向后走
+            // gasHad = 0;
+            // successful = true;
+            // for (int i = 0; i < len; i++) {
+            //     // 加油
+            //     gasHad += gas[(startIdx - i + len) % len];
+            //     // 向后走,耗油
+            //     gasHad -= cost[(startIdx - i - 1 + len) % len];
+            //     // 油不够
+            //     if (gasHad < 0) {
+            //         successful = false;
+            //         break;
+            //     }
+            // }
+            // if (successful) {
+            //     return startIdx;
+            // }
 
         }
         return -1;

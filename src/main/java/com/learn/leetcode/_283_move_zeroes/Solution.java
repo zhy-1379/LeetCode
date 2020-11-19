@@ -1,8 +1,6 @@
 package com.learn.leetcode._283_move_zeroes;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 /**
  * ClassName: Solution

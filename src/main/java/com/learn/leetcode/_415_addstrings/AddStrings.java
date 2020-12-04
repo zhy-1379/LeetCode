@@ -3,6 +3,7 @@ package com.learn.leetcode._415_addstrings;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.security.SecureRandom;
 import java.util.Random;
 
 /**
@@ -29,7 +30,7 @@ public class AddStrings {
     private static Logger logger = LoggerFactory.getLogger(AddStrings.class);
 
     public static void main(String[] args) {
-        Random random = new Random();
+        Random random = new SecureRandom();
         String num1 = String.valueOf(random.nextInt(1000));
         String num2 = String.valueOf(random.nextInt(1000));
         Solution solution = new Solution();

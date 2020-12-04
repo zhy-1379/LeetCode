@@ -1,5 +1,6 @@
 package com.learn.leetcode._491_increasing_subsequences;
 
+import java.security.SecureRandom;
 import java.util.*;
 
 /**
@@ -52,7 +53,7 @@ public class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();
 
-        Random random = new Random();
+        Random random = new SecureRandom();
         int[] nums = new int[random.nextInt(20)];
         for (int j = 0; j < nums.length; j++) {
             nums[j] = random.nextInt(100);

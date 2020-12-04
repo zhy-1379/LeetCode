@@ -4,6 +4,7 @@ import com.learn.algorithmbase.sort.QuickSort;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.security.SecureRandom;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -25,7 +26,7 @@ public class MagicIndexLcci {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        Random random = new Random();
+        Random random = new SecureRandom();
         int[] nums = new int[random.nextInt(100)];
         for (int i = 0; i < nums.length; i++) {
             nums[i] = random.nextInt(100);

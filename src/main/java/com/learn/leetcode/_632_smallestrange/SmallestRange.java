@@ -4,6 +4,7 @@ import com.learn.algorithmbase.sort.QuickSort;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -32,7 +33,7 @@ public class SmallestRange {
     private static Logger logger = LoggerFactory.getLogger(SmallestRange.class);
 
     public static void main(String[] args) {
-        Random random = new Random();
+        Random random = new SecureRandom();
         List<List<Integer>> nums = new ArrayList<>();
         for (int i = 0; i < random.nextInt(20) + 1; i++) {
             List<Integer> list = new ArrayList<>();

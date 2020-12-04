@@ -1,5 +1,6 @@
 package com.learn.leetcode._347_top_k_frequent_elements;
 
+import java.security.SecureRandom;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -14,7 +15,7 @@ import java.util.stream.Collectors;
  * @since JDK 1.8
  */
 public class Solution {
-    private Random random = new Random();
+    private Random random = new SecureRandom();
 
 
     public int[] topKFrequent(int[] nums, int k) {

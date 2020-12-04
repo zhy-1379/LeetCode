@@ -1,5 +1,6 @@
 package com.learn.algorithmbase.sort;
 
+import java.security.SecureRandom;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -35,7 +36,7 @@ public class SelectSort {
     }
 
     public static void main(String[] args) {
-        Random random = new Random();
+        Random random = new SecureRandom();
         int[] nums = new int[random.nextInt(20)];
         for (int i = 0; i < nums.length; i++) {
             nums[i] = random.nextInt(50);

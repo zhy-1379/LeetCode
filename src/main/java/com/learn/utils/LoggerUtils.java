@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
+import java.util.stream.Stream;
 
 /**
  * ClassName: LoggerUtils
@@ -42,6 +43,9 @@ public class LoggerUtils {
         Objects.requireNonNull(getLogger(clazz)).info(message);
     }
 
+    public static void info(Class<?> clazz, Object message) {
+        Objects.requireNonNull(getLogger(clazz)).info(String.valueOf(message));
+    }
 
     public static void debug(Class<?> clazz, String message) {
         Objects.requireNonNull(getLogger(clazz)).debug(message);
